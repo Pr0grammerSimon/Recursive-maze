@@ -1,0 +1,12 @@
+body{
+    margin: 0%;
+    background-color: black;
+}
+#grid-container {
+    display: grid;
+    height: 100vh;
+  }
+ #grid-container > div{
+    display: grid;
+    float: left;
+} 
