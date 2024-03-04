@@ -4,7 +4,6 @@ body{
 }
 #grid-container {
     display: grid;
-    height: 100vh;
   }
  #grid-container > div{
     display: grid;
