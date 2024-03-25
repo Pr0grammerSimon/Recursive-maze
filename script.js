@@ -8,10 +8,10 @@ let labirynt = [
     ['X','X','X','X','X','X','X','X','X','X','X','X']
 ]
 */
-let x = 0;
+let x = 1;
 let y = 1;
-const width = 17;
-const height = 27;
+const width = 39;
+const height = 37;
 let oldX = x;
 let oldY = y;
 
