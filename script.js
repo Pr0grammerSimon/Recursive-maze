@@ -10,8 +10,8 @@ let labirynt = [
 */
 let x = 1;
 let y = 1;
-const width = 39;
-const height = 37;
+const width = 13;
+const height = 17;
 let oldX = x;
 let oldY = y;
 
@@ -82,8 +82,7 @@ function visit(y,x){
 
 visited[1][1] = true;
 visit(1,1);
-console.log(labirynt);
-
+//console.log(labirynt);
 
 let cost = [];
 visited = [];
@@ -106,7 +105,6 @@ function graph(y,x){
     visited[y][x] = true;
     for (let i = 0; i<4; i++){
         if (y+dy[i]<height && y+dy[i] > -1 && x+dx[i] < width && x+dx[i] > -1){
-            //console.log("UWU");
             if (labirynt[y+dy[i]][x+dx[i]] == '.' && cost[y+dy[i]][x+dx[i]] > cost[y][x] + 1){
                 cost[y+dy[i]][x+dx[i]] = cost[y][x] + 1;
                 graph(y+dy[i],x+dx[i]);
@@ -120,7 +118,7 @@ graph(1,1);
 //console.log(maxi);
 //console.log(cost);
 labirynt[maxi[1]][maxi[2]] = 'E';
-
+console.log(maxi);
 
 
 
@@ -191,7 +189,7 @@ document.onkeydown = function (e) {
                 //console.log(x,labirynt);
             }
             edit();
-            console.log(labirynt);
+            //console.log(labirynt);
         }
     });
     /*
